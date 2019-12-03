@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* *,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: rgb(223, 219, 219);
+}
+
+.container {
+  /* min-height: 100vh; */
+  min-width: 1200px;
+  position: relative;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(207, 203, 203);
+  box-shadow: 4px 4px 8px gray;
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.2;
+  color: gray;
+  font-family: 'Titillium Web', sans-serif;
+  transition: color 0.7s;
+}
+
+.menu-link:hover {
+  color: #000;
+}
+
+/* section about me */
+
+#about-me {
+  padding: 100px 0px;
+  background-color: rgb(184, 213, 224);
+}
+
+.title {
+  margin: 0px 0px 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.6;
+  font-family: 'Tomorrow', sans-serif;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.white {
+  color: #fff;
+}
+
+.description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo {
+  padding: 10px;
+  border-radius: 3%;
+  background-color: #fff;
+  /* transition: translate 0.5s; */
+}
+
+/* .photo:hover {
+  translate: rotateY(90deg);
+} */
+
+.img-photo {
+  border-radius: 3%;
+}
+
+.name {
+  /* background-color: #fff;
+  border-radius: 25%; */
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.occupation {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.about-me-title {
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: 'Exo', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(129, 128, 128);
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subtitle::before {
+  display: inline-block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  margin-right: 30px;
+  vertical-align: top;
+}
+
+.education-title::before {
+  background-image: url(../src/images/college-graduation.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.languages-title::before {
+  background-image: url(../src/images/language.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.education-item {
+  padding: 1%;
+}
+
+.education-year {
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: #000;
+}
+
+.education-text {
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(61, 59, 57);
+}
+
+.languages-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.languages-item {
+  padding: 1%;
+}
+
+.languages-text {
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(61, 59, 57);
+}
+
+/* skills */
+#skills {
+  padding: 100px 0px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0px auto;
+  height: 100px;
+}
+
+.skills-list-item {
+  width: 12.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill {
+  margin: 0;
+  color: gray;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.icon::before {
+  display: block;
+  content: '';
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}
+
+.html {
+  background-image: url(../src/images/skills/html5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.css {
+  background-image: url(../src/images/skills/css-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scss {
+  background-image: url(../src/images/skills/sass.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bem {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../src/images/skills/bem.png);
+}
+
+.git {
+  background-image: url(../src/images/skills/git.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gulp {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../src/images/skills/gulp.png);
+}
+
+.webpack {
+  background-image: url(../src/images/skills/wordpress.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.es6 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../src/images/skills/es6.png);
+}
+
+.js {
+  background-image: url(../src/images/skills/js.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bootstrap {
+  background-image: url(../src/images/skills/bootstrap.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photoshop {
+  background-image: url(../src/images/skills/photoshop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.api {
+  background-image: url(../src/images/skills/api.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.json {
+  background-image: url(../src/images/skills/json-file.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.react {
+  background-image: url(../src/images/skills/react.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oop {
+  background-image: url(../src/images/skills/oop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.npm {
+  background-image: url(../src/images/skills/npmlogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* works */
+
+#works {
+  background-color: #000;
+  padding: 100px 0;
+}
+
+.works-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.works-list-item {
+  width: 33.333%;
+  padding: 20px;
+  text-align: center;
+}
+
+.works-img:hover {
+  transform: scale(1.1);
+}
+
+.works-img {
+  border-radius: 5%;
+  box-shadow: 4px 4px 8px gray;
+  transition: transform 0.7s;
+}
+
+/* contact */
+/* .social-link {
+  width: 40px;
+  height: 40px;
+  background-image: url(../src/images/facebook.png);
+}
+
+.facebook {
+  background-image: url(../src/images/facebook.png);
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+#contact {
+  padding-top: 100px;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  padding: 0;
+  margin: 0px auto 50px;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0px auto 50px;
+}
+
+.contact-text {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+  margin: 0;
+}
+
+.adress {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  padding-left: 10px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.span {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+.span::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+.return {
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(129, 128, 128);
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px #000;
+  transition: background 0.7s, border-radius 0.7s;
+}
+
+.return:hover {
+  border-radius: 15%;
+}
